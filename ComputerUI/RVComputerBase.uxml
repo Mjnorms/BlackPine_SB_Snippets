@@ -1,0 +1,249 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <engine:Template name="VehiclePart" src="project://database/Assets/UIData/UIToolkit/Documents/VehiclePart.uxml?fileID=9197481963319205126&amp;guid=c31017d10bcc5f143991cac390b7bb92&amp;type=3#VehiclePart" />
+    <Style src="project://database/Assets/Scenes/Sandbox/John/UI/Laptop%20UI/RVComputerStyleSheet.uss?fileID=7433441132597879392&amp;guid=62516d24fc407074688d2f1746bd7a9f&amp;type=3#RVComputerStyleSheet" />
+    <engine:VisualElement name="RVMenu" style="flex-grow: 1; flex-direction: column-reverse; background-color: rgb(24, 16, 1); -unity-font-definition: url(&quot;project://database/Assets/Fonts/AC437_APRICOT_MONO.TTF?fileID=12800000&amp;guid=33f65b5980984b344afe5ce48599818c&amp;type=3#AC437_APRICOT_MONO&quot;);">
+        <engine:VisualElement name="Tabs" picking-mode="Ignore" class="tabButtonsOff" style="width: 100%; height: 10%; min-width: 100%; max-width: 100%; position: absolute; flex-direction: row; margin-right: 0; padding-right: 300px; padding-left: 300px; align-items: center; justify-content: center;">
+            <engine:Button name="Email" focusable="false" class="tabButtons colorTint" style="align-items: flex-start; flex-direction: column; background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Message01.png?fileID=2800000&amp;guid=1cbd3a21aaa34ee4cb36afbec7d1f9d6&amp;type=3#UI_Button_Computer_Message01&quot;);">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:Button name="Contracts" class="tabButtons colorTint" style="background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Contracts01.png?fileID=2800000&amp;guid=7c720f927413c424989547757858c01d&amp;type=3#UI_Button_Computer_Contracts01&quot;);">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:Button name="Map" class="tabButtons colorTint" style="background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Map01.png?fileID=2800000&amp;guid=28e562aba440d654ba0f2171250df75c&amp;type=3#UI_Button_Computer_Map01&quot;);">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:Button name="Support" class="tabButtons colorTint" style="background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Support01.png?fileID=2800000&amp;guid=7eb4b93ad42a25d48a54da8cb0269c66&amp;type=3#UI_Button_Computer_Support01&quot;);">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:Button name="RV" enabled="false" class="tabButtons colorTint" style="-unity-text-align: middle-left; background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Vehicle01.png?fileID=2800000&amp;guid=e08cc040ac4c25947b9d30307dcce0ac&amp;type=3#UI_Button_Computer_Vehicle01&quot;); opacity: 0.1;">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:Button name="Store" enabled="true" class="tabButtons colorTint" style="-unity-text-align: middle-left; background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Shop01.png?fileID=2800000&amp;guid=cd998b96a68aabf45b93fb21534f8539&amp;type=3#UI_Button_Computer_Shop01&quot;); opacity: 1;">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:Button name="Inventory" enabled="true" class="tabButtons colorTint" style="background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Buttons/UI_Button_Computer_Inventory01.png?fileID=2800000&amp;guid=137543bcc1867324889e9ec7e055e232&amp;type=3#UI_Button_Computer_Inventory01&quot;); opacity: 1;">
+                <engine:VisualElement name="New" class="newNotification colorTint" />
+            </engine:Button>
+            <engine:VisualElement name="LogoSmall" class="colorTint" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Graphics/UI_Ic_RockyTop_Logo_WHITE.png?fileID=2800000&amp;guid=cd8bd2b4588e998409fe741b1ebbdeab&amp;type=3#UI_Ic_RockyTop_Logo_WHITE&quot;); padding-right: 0; opacity: 0.7; position: absolute; width: 150px; height: 130px; bottom: auto; right: auto; top: -6px; left: 30px;" />
+        </engine:VisualElement>
+        <engine:VisualElement name="EmailsList" class="contentList colorTint contentListOff">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar colorTint">
+                <engine:Label text="MESSAGE" class="tabTitle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content">
+                <engine:ScrollView name="MailList" class="itemList" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="ContractsList" class="contentList colorTint contentListOff">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar colorTint">
+                <engine:Label text="CONTRACTS" class="tabTitle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content">
+                <engine:ScrollView name="ContractsScrollView" class="itemList" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="MapContent" class="contentList colorTint contentListOff">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar colorTint">
+                <engine:Label text="MAP" class="tabTitle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content colorTint" style="flex-grow: 1; flex-direction: row; align-content: center; justify-content: center; align-self: center; align-items: center;">
+                <engine:VisualElement name="MapContentContainer" style="flex-grow: 1; flex-direction: row; width: 100%; height: 100%; align-self: center; align-items: center; align-content: center; justify-content: center; right: 0; visibility: visible;">
+                    <engine:VisualElement name="PlayerStatus" style="flex-grow: 1; justify-content: space-between; height: 100%; padding-top: 100px; padding-bottom: 100px;">
+                        <engine:VisualElement name="Player1Status" class="playerStatus colorTint">
+                            <engine:VisualElement name="PlayerTitle" class="playerTitleBar">
+                                <engine:Label text="PLAYER 01" name="PlayerTitleLabel" class="playerNameLabel" />
+                            </engine:VisualElement>
+                            <engine:Label text="HEALTH" class="playerHealthLabel" />
+                            <engine:VisualElement name="PlayerHealthBarFrame" class="playerHealthBarFrame">
+                                <engine:VisualElement name="PlayerHealthBar" class="playerHealthBarFill" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement name="Player1Status" class="playerStatus colorTint">
+                            <engine:VisualElement name="PlayerTitle" class="playerTitleBar">
+                                <engine:Label text="PLAYER 02" name="PlayerTitleLabel" class="playerNameLabel" />
+                            </engine:VisualElement>
+                            <engine:Label text="HEALTH" class="playerHealthLabel" />
+                            <engine:VisualElement name="PlayerHealthBarFrame" class="playerHealthBarFrame">
+                                <engine:VisualElement name="PlayerHealthBar" class="playerHealthBarFill" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement name="Player1Status" class="playerStatus colorTint">
+                            <engine:VisualElement name="PlayerTitle" class="playerTitleBar">
+                                <engine:Label text="PLAYER 03" name="PlayerTitleLabel" class="playerNameLabel" />
+                            </engine:VisualElement>
+                            <engine:Label text="HEALTH" class="playerHealthLabel" />
+                            <engine:VisualElement name="PlayerHealthBarFrame" class="playerHealthBarFrame">
+                                <engine:VisualElement name="PlayerHealthBar" class="playerHealthBarFill" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                        <engine:VisualElement name="Player1Status" class="playerStatus colorTint">
+                            <engine:VisualElement name="PlayerTitle" class="playerTitleBar">
+                                <engine:Label text="PLAYER 04" name="PlayerTitleLabel" class="playerNameLabel" />
+                            </engine:VisualElement>
+                            <engine:Label text="HEALTH" class="playerHealthLabel" />
+                            <engine:VisualElement name="PlayerHealthBarFrame" class="playerHealthBarFrame">
+                                <engine:VisualElement name="PlayerHealthBar" class="playerHealthBarFill" />
+                            </engine:VisualElement>
+                        </engine:VisualElement>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="MapView" style="flex-grow: 0; width: 1400px; height: 800px; background-color: rgba(77, 77, 77, 0.4); border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; min-width: 1400px; max-width: 1400px; max-height: 800px; min-height: 800px;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="SupportContent" class="contentList colorTint contentListOff">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar colorTint">
+                <engine:Label text="SUPPORT" class="tabTitle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content" style="flex-grow: 1; flex-direction: row;">
+                <engine:VisualElement name="Left" style="flex-grow: 1;">
+                    <engine:ScrollView name="CameraScrollView" />
+                </engine:VisualElement>
+                <engine:VisualElement name="Right" style="flex-grow: 0; justify-content: center; align-items: center; align-self: center; align-content: center; width: 1400px; height: 800px;">
+                    <engine:VisualElement name="CameraFrame" style="flex-grow: 0; width: 100%; height: 100%; padding-bottom: 8px; align-self: auto;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="RVContent" class="contentList colorTint contentListOff" style="flex-grow: 1; visibility: visible;">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar colorTint">
+                <engine:Label text="VEHICLE" name="Label" class="tabTitle" />
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content" style="flex-grow: 1; flex-direction: row;">
+                <engine:VisualElement name="Parts" style="flex-grow: 1; width: 30%;">
+                    <engine:ScrollView style="min-height: 50%;">
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 1;" />
+                        <engine:Instance template="VehiclePart" name="VehiclePart" style="scale: 0.8 0.8;" />
+                    </engine:ScrollView>
+                </engine:VisualElement>
+                <engine:VisualElement name="Info" style="flex-grow: 1; translate: -10% 0; width: 70%;">
+                    <engine:VisualElement name="VehicleStatus" style="height: 25%; transform-origin: left top; scale: 0.5 0.5; translate: -2% 10%;">
+                        <engine:Label text="STATUS" style="align-self: center; font-size: 52px; -unity-font-style: bold; margin-top: 4px; margin-right: 4px; margin-bottom: 4px; margin-left: 4px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; color: rgb(234, 250, 255); transform-origin: center; translate: -124% 0;" />
+                        <engine:VisualElement name="RVHealthBarFrame" style="flex-grow: 0; flex-shrink: 0; height: 30%; width: 90%; align-self: center; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; background-color: rgb(0, 0, 0); background-image: url(&quot;project://database/Assets/Art/UI/SciFi/UI-Xd-ButtonSelect-Blue.png?fileID=2800000&amp;guid=5160d613fa3df6c4c9499cc9f4f4a3b3&amp;type=3#UI-Xd-ButtonSelect-Blue&quot;); scale: 1 1.4;">
+                            <engine:VisualElement name="RVHealthBar" style="flex-grow: 1; background-color: rgb(234, 255, 0); width: 50%; scale: 0.9 0.6;" />
+                        </engine:VisualElement>
+                        <engine:Label text="50%" name="RVHealthPercentageLabel" style="align-self: center; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; font-size: 54px; -unity-font-style: bold; color: rgb(2, 150, 198); transform-origin: center; translate: 500px -70px;" />
+                    </engine:VisualElement>
+                    <engine:VisualElement name="RVVisualization_Top" class="vehicleVisualizer" style="scale: 0.7 0.8; transform-origin: left -200%;" />
+                    <engine:VisualElement name="RVVisualization_Side" class="vehicleVisualizer" style="background-image: url(&quot;project://database/Assets/Art/UI/SciFi/RV_Side.jpg?fileID=2800000&amp;guid=7a3f11ca65ee1764283656ca76f63dc8&amp;type=3#RV_Side&quot;); scale: 0.7 0.8; transform-origin: left -300%;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="StoreContent" class="contentList colorTint contentListOff" style="color: rgb(240, 240, 240);">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar">
+                <engine:Label text="STORE" name="Label" class="tabTitle" />
+                <engine:VisualElement name="Cash" class="cash">
+                    <engine:Label text="$" name="Sign" />
+                    <engine:Label text="0" name="Money" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content" style="flex-grow: 1; flex-direction: row;">
+                <engine:VisualElement name="Left">
+                    <engine:ScrollView name="StoreView" style="width: 100%; height: 100%;">
+                        <engine:VisualElement name="StoreRow" class="storeRow">
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="StoreRow" class="storeRow">
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="StoreRow" class="storeRow">
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                        </engine:VisualElement>
+                    </engine:ScrollView>
+                </engine:VisualElement>
+                <engine:VisualElement name="Right" style="flex-grow: 1; border-left-width: 3px; border-left-color: rgb(188, 133, 31); border-right-color: rgb(188, 133, 31); border-top-color: rgb(188, 133, 31); border-bottom-color: rgb(188, 133, 31);">
+                    <engine:VisualElement name="Top" style="flex-grow: 1; width: 100%;">
+                        <engine:ScrollView name="Cart" style="width: 70%; align-self: center; border-bottom-width: 3px; border-left-color: rgb(188, 133, 31); border-right-color: rgb(188, 133, 31); border-top-color: rgb(188, 133, 31); border-bottom-color: rgb(188, 133, 31); padding-bottom: 29px;">
+                            <engine:VisualElement name="StoreRow" style="flex-grow: 1;">
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            </engine:VisualElement>
+                        </engine:ScrollView>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="Bottom" style="flex-grow: 1; width: 100%; height: 20%; align-self: center; align-content: center; align-items: center; justify-content: center;">
+                        <engine:Button text="Purchase" name="Purchase" class="storePurchaseButton" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="InventoryContent" class="contentList colorTint contentListOff">
+            <engine:VisualElement name="TabTitleBar" class="tabTitleBar colorTint">
+                <engine:Label text="INVENTORY" name="Label" class="tabTitle" />
+                <engine:VisualElement name="Cash" class="cash">
+                    <engine:Label text="$" name="Sign" />
+                    <engine:Label text="0" name="Money" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+            <engine:VisualElement name="Content" class="content" style="flex-grow: 1; flex-direction: row;">
+                <engine:VisualElement name="Left" style="flex-grow: 0;">
+                    <engine:ScrollView name="InventoryView" style="width: 100%; height: 100%;">
+                        <engine:VisualElement name="StoreRow" class="storeRow">
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="StoreRow" class="storeRow">
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                        </engine:VisualElement>
+                        <engine:VisualElement name="StoreRow" class="storeRow">
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                        </engine:VisualElement>
+                    </engine:ScrollView>
+                </engine:VisualElement>
+                <engine:VisualElement name="Right" style="flex-grow: 1; border-left-width: 3px; border-left-color: rgb(188, 133, 31); border-right-color: rgb(188, 133, 31); border-top-color: rgb(188, 133, 31); border-bottom-color: rgb(188, 133, 31);">
+                    <engine:VisualElement name="Top" style="flex-grow: 1; width: 100%;">
+                        <engine:ScrollView name="InvenCart" style="width: 70%; align-self: center; border-bottom-width: 3px; border-left-color: rgb(188, 133, 31); border-right-color: rgb(188, 133, 31); border-top-color: rgb(188, 133, 31); border-bottom-color: rgb(188, 133, 31); padding-bottom: 29px;">
+                            <engine:VisualElement name="StoreRow" style="flex-grow: 1;">
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                                <engine:VisualElement name="StoreItemSlot" class="storeItemSlot" />
+                            </engine:VisualElement>
+                        </engine:ScrollView>
+                    </engine:VisualElement>
+                    <engine:VisualElement name="Bottom" style="flex-grow: 1; width: 100%; height: 20%; align-self: center; align-content: center; align-items: center; justify-content: center;">
+                        <engine:Button text="Sell" name="Sell" class="storePurchaseButton" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="LogoLarge" class="colorTint" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/Art/UI/Retro_Computer/UI_Graphics/UI_Ic_RockyTop_Logo_WHITE.png?fileID=2800000&amp;guid=cd8bd2b4588e998409fe741b1ebbdeab&amp;type=3#UI_Ic_RockyTop_Logo_WHITE&quot;); padding-right: 0; opacity: 0.71; position: absolute; width: 650px; height: 553px; bottom: auto; right: auto; top: 228px; left: 622px; visibility: hidden;" />
+        <engine:VisualElement name="IncomingAlert" class="colorTint" style="padding-right: 0; width: 751px; height: 114px; align-self: center; justify-content: center; align-items: center; align-content: center; position: absolute; top: 510px; left: 580px; visibility: visible;">
+            <engine:VisualElement style="flex-grow: 1; height: 10px; width: 100%; max-height: 10px; min-height: 10px; background-color: rgb(255, 181, 43);" />
+            <engine:Label text="Incoming Message" name="Label" style="font-size: 78px; opacity: 1; height: auto; width: 100%; justify-content: center; align-self: center; align-content: center; align-items: center; -unity-text-align: middle-center;" />
+            <engine:VisualElement style="flex-grow: 1; height: 10px; width: 100%; max-height: 10px; min-height: 10px; background-color: rgb(255, 181, 43);" />
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>
